@@ -1,9 +1,9 @@
 const linearArray = [2, 4, 6, 8, 12, 14, 16];
+const item = 10;
+const insertPosition = 5;
 
-function insertion(array) {
-  const item = 10;
-  const insertPosition = 5;
-  let numberOfElements = 7;
+function insertion(array, item, insertPosition) {
+  let numberOfElements = array.length;
   let j = numberOfElements;
   let n = numberOfElements + 1;
 
@@ -16,4 +16,4 @@ function insertion(array) {
   return linearArray;
 }
 
-insertion(linearArray);
+insertion(linearArray, item, insertPosition);

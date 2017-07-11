@@ -1,8 +1,8 @@
 const linearArray = [2, 4, 6, 8, 12, 14, 16];
+const deletePosition = 4;
 
 function deletion(array) {
-  const deletePosition = 4;
-  let numberOfElements = 7;
+  let numberOfElements = array.length;
   let j = deletePosition;
 
   while(j < numberOfElements) {
@@ -15,4 +15,4 @@ function deletion(array) {
   return linearArray;
 }
 
-deletion(linearArray);
+deletion(linearArray, deletePosition);
